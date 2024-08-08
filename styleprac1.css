@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px; /* Adjust spacing between groups if needed */
+}
+
+.input-group h3 {
+    margin: 0 10px 0 0; /* Adjust spacing between h3 and input if needed */
+    white-space: nowrap; /* Prevent h3 text from wrapping */
+}
+
+.input-group input {
+    flex: 1; /* Allow input to grow and fill the remaining space if needed */
+}
