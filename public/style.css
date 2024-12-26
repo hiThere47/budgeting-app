@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+/* Style for each input group */
+.input-group {
+    margin-bottom: 50px; /* Space between input groups */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Style for the top-row (h3 and inline input) */
+.top-row {
+    display: flex;
+    align-items: center; /* Vertically align h3 and input */
+    gap: 10px; /* Space between h3 and the input next to it */
+}
+
+/* Inline input next to the h3 */
+.inline-input {
+    width: 70px; /* Set width for inline input */
+}
+
+/* Input box below the h3 */
+.under-input {
+    margin-top: 10px; /* Space between the inline row and the under input */
+    width: 70px; /* Set width for under input */
+}
