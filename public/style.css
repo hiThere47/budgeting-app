@@ -6,7 +6,8 @@ h1 {
 .input-group {
     margin-bottom: 50px; /* Space between input groups */
     display: flex;
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column; /* Stack the top-row and under-input container vertically */
+    gap: 10px; /* Space between rows */
 }
 
 /* Style for the top-row (h3 and inline input) */
@@ -21,8 +22,17 @@ h1 {
     width: 70px; /* Set width for inline input */
 }
 
-/* Input box below the h3 */
+/* Container for under-inputs to handle wrapping */
+.under-input-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow inputs to wrap to the next line */
+    gap: 10px; /* Add space between inputs */
+}
+
+/* Individual input box */
 .under-input {
-    margin-top: 10px; /* Space between the inline row and the under input */
-    width: 70px; /* Set width for under input */
+    display: inline-block;
+    width: 70px; /* Fixed width */
+    margin-bottom: 10px; /* Add spacing below for better wrapping */
 }

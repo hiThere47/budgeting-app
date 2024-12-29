@@ -10,12 +10,12 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('/', (req, res)=>{
     console.log('Serving your main route page')
-    res.sendFile(path.join(__dirname, 'views', '/index.html')) //at first this was working without path.join and the views.... weird
+    res.render('index')
 })
 
 app.get('/spentPage', (req, res)=>{
     console.log('Serving your Spent page')
-    res.render(path.join(__dirname, 'views', 'spentPage.html')) //at first this was working without path.join and the views.... weird
+    res.render('spentPage')
 })
 
 
@@ -32,5 +32,5 @@ app.get('/spentPage', (req, res)=>{
 
 
 app.listen(process.env.PORT || PORT, ()=>{
-    console.log(`The server is running on port ${PORT}! Go catch it`)
+    console.log(`The server is running on port ${PORT}! Lets Go!`)
 })
